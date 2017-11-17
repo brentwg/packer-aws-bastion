@@ -3,16 +3,19 @@ Packer script used to create my default Bastion AMI
 
 ## Quickstart
 Step 1:  
-Source the aws.env file
+Modify the `aws.env` file to match your AWS environment.  
+
+Step 2:  
+Source the `aws.env` file
 ```
 source aws.env
 ```  
-Step 2:  
+Step 3:  
 Validate the Packer template file  
 ```
 packer validate packer-bastion.json
 ```  
-Step 3:  
+Step 4:  
 Build and deploy the AWS AMI  
 ```
 packer build packer-bastion.json
